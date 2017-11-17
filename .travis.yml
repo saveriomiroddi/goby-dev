@@ -10,6 +10,7 @@ before_install:
   - sudo apt-get install apache2-utils
 
 before_script:
+  - sudo ./travis_pgsql_check.sh
   - ./prepare_travis_for_fork.sh
   - psql -c 'create database goby_test;' -U postgres
 

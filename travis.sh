@@ -5,6 +5,8 @@ SLEEP=0.5
 set -e
 echo "" > coverage.txt
 
+pwd
+pwd -P
 # for d in $(go list ./...); do
 #     if [ $d == "github.com/goby-lang/goby/vm" ]; then
 #         # Test vm's code without running race detection because that breaks plugin tests.
@@ -34,9 +36,15 @@ echo "" > coverage.txt
 
 # Test if libs that require built in Goby script would work.
 # TODO: Write a test for this specific case
+pwd
+pwd -P
 make install
+pwd
+pwd -P
 # goby test specs
 
+pwd
+pwd -P
 git branch
 git branch -r
 

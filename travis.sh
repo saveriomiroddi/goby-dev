@@ -41,7 +41,7 @@ pwd -P
 make install
 pwd
 pwd -P
-# goby test specs
+goby test specs
 
 pwd
 pwd -P
